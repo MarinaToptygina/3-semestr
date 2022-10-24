@@ -13,19 +13,19 @@ if (str1.Length != str2.Length)
     Console.WriteLine("error");
 }
 
-string res = "";
+string it = "";
 for (int i = 0; i < str1.Length; i++)
 {
     for (int j = 0; j < str2.Length; j++)
     {
         if (str1[i] == str2[j])
         {
-            res += str2[j];
+            it += str2[j];
             str2 = str2.Remove(j, 1);
         }
     }
 }
-if (res.Length == str1.Length)
+if (it.Length == str1.Length)
     Console.WriteLine("Yes");
 else Console.WriteLine("No");
 
